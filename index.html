@@ -9,7 +9,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container">
+    <div class="container border border-primary">
         <div class="row">
             <div class="col">
                 <div class="row">
@@ -31,9 +31,9 @@
         </div>
         <div class="row">
             <div class="col">
-                <div class="row">Sunday</div>
-                <div class="row">17/10/2020</div>
-                <div class="row">17:29</div>
+                <div class="row" id="current-day"></div>
+                <div class="row" id="current-date">17/10/2020</div>
+                <div class="row" id="current-time"></div>
             </div>
             <div class="col">
                 <div class="row">Sunny</div>
@@ -44,46 +44,49 @@
                 <div class="row">Humidity: 80%</div>
             </div>
         </div>
-        <div class="row">
-            <p>5 days weather forecast</p>
-        </div>
-        <div class="row">
+        <div class="row five-day-forecast border border-info">
             <div class="row">
-                <div class="col">Mon</div>
-                <div class="col">Tue</div>
-                <div class="col">Wed</div>
-                <div class="col">Thu</div>
-                <div class="col">Fri</div>
+                <p>5 days weather forecast</p>
             </div>
             <div class="row">
-                <div class="col">19/10</div>
-                <div class="col">20/10</div>
-                <div class="col">21/10</div>
-                <div class="col">22/10</div>
-                <div class="col">23/10</div>
-            </div>
-            <div class="row">
-                <div class="col">15°C</div>
-                <div class="col">14°C</div>
-                <div class="col">16°C</div>
-                <div class="col">12°C</div>
-                <div class="col">13°C</div>
-            </div>
-            <div class="row">
-                <div class="col">22°C</div>
-                <div class="col">22°C</div>
-                <div class="col">27°C</div>
-                <div class="col">18°C</div>
-                <div class="col">20°C</div>
-            </div>
-            <div class="row">
-                <div class="col">⛅️</div>
-                <div class="col">⛅️</div>
-                <div class="col">☀️</div>
-                <div class="col">🌦</div>
-                <div class="col">🌦</div>
+                <div class="row">
+                    <div class="col">Mon</div>
+                    <div class="col">Tue</div>
+                    <div class="col">Wed</div>
+                    <div class="col">Thu</div>
+                    <div class="col">Fri</div>
+                </div>
+                <div class="row">
+                    <div class="col">19/10</div>
+                    <div class="col">20/10</div>
+                    <div class="col">21/10</div>
+                    <div class="col">22/10</div>
+                    <div class="col">23/10</div>
+                </div>
+                <div class="row">
+                    <div class="col">15°C</div>
+                    <div class="col">14°C</div>
+                    <div class="col">16°C</div>
+                    <div class="col">12°C</div>
+                    <div class="col">13°C</div>
+                </div>
+                <div class="row">
+                    <div class="col">22°C</div>
+                    <div class="col">22°C</div>
+                    <div class="col">27°C</div>
+                    <div class="col">18°C</div>
+                    <div class="col">20°C</div>
+                </div>
+                <div class="row">
+                    <div class="col">⛅️</div>
+                    <div class="col">⛅️</div>
+                    <div class="col">☀️</div>
+                    <div class="col">🌦</div>
+                    <div class="col">🌦</div>
+                </div>
             </div>
         </div>
     </div>
+    <script src="src/app.js"></script>
 </body>
 </html>
