@@ -10,8 +10,34 @@
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
 </head>
 <body>
-    <div class="container border border-primary">
-        <div class="row">
+    <div class="container">
+        <div class="weather-app">
+            <form action="" id="search-form">
+                <input type="text" placeholder="Type City" id="input-city">
+                <input type="submit" value="Search">
+            </form>
+            <h1>Aarhus, Denmark</h1>
+            <ul>
+                <li id="current-day"></li>
+                <li id="current-date"></li>
+                <li id="current-time"></li>
+                <li>Sunny</li>
+            </ul>
+            <div class="row">
+                <div class="col-6">
+                    <span>☀️</span>12°C | 35°F
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li class="row">Precipitation: 10%</li>
+                        <li class="row">Wind: 2m/s SE</li>
+                        <li class="row">Humidity: 80%</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+        
+    <!-- <div class="row">
             <div class="col">
                 <div class="row">
                     <h2>17°C</h2>
@@ -86,7 +112,7 @@
                     <div class="col">🌦</div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <script src="src/app.js"></script>
 </body>
