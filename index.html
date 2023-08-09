@@ -12,22 +12,29 @@
 <body>
     <div class="container">
         <div class="weather-app">
-            <form action="" id="search-form">
-                <input type="text" placeholder="Type City" id="input-city">
-                <input type="submit" value="Search">
-            </form>
-            <h1>Aarhus, Denmark</h1>
-            <ul>
+            <div class="row">
+                <div class="col-6">
+                    <h1>New York</h1>
+                </div>
+                <div class="col-6">
+                    <form action="" id="search-form">
+                        <input type="text" placeholder="Type City" id="input-city">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+            <ul class="current-date-section">
                 <li id="current-day"></li>
                 <li id="current-date"></li>
                 <li id="current-time"></li>
                 <li>Sunny</li>
             </ul>
             <div class="row">
-                <div class="col-6">
-                    <span>☀️</span>12°C | 35°F
+                <div class="col-6 current-temperature">
+                    <span id="main-emoji">☀️</span>12<span class="units">°C|<a href="#">°F</a></span>  
+
                 </div>
-                <div class="col-6">
+                <div class="col-6 current-conditions">
                     <ul>
                         <li class="row">Precipitation: 10%</li>
                         <li class="row">Wind: 2m/s SE</li>
