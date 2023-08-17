@@ -41,6 +41,10 @@ li {
     top: -14px;
 }
 
+#description {
+    text-transform: capitalize;
+}
+
 #main-emoji {
     font-size: 50px;
     margin-right: 15px;
