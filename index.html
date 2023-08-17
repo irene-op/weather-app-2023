@@ -14,7 +14,7 @@
         <div class="weather-app">
             <div class="row">
                 <div class="col-6">
-                    <h1></h1>
+                    <h1 id="city"></h1>
                 </div>
                 <div class="col-6">
                     <form action="" id="search-form">
@@ -27,16 +27,16 @@
                 <li id="current-day"></li>
                 <li id="current-date"></li>
                 <li id="current-time"></li>
-                <li id="description"></li>
             </ul>
             <div class="row">
                 <div class="col-6 current-temperature">
-                    <span id="main-emoji">☀️</span><strong id="current-temperature"></strong><span class="units">°C|<a href="#">°F</a></span>  
+                    <img src="" id="main-icon" alt="weather icon"><strong id="current-temperature"></strong><span class="units">°C|<a href="#">°F</a></span>  
 
                 </div>
                 <div class="col-6 current-conditions">
                     <ul>
-                        <li class="row">Wind: <span id="wind-speed"></span>km/h SE</li>
+                        <li class="row" id="description"></li>
+                        <li class="row">Wind: <span id="wind-speed"></span>km/h</li>
                         <li class="row">Humidity: <span id="humidity"></span>%</li>
                     </ul>
                 </div>
