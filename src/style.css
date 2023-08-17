@@ -41,6 +41,16 @@ li {
     top: -14px;
 }
 
+.current-temperature .active {
+    color: black;
+    cursor: default;
+    text-decoration: none;
+}
+
+.current-temperature .active:hover {
+    text-decoration: none;
+}
+
 #description {
     text-transform: capitalize;
 }
@@ -48,5 +58,9 @@ li {
 #main-icon {
     font-size: 50px;
     margin-right: 15px;
+}
+
+#fahrenheit {
+    text-decoration: none;
 }
 
