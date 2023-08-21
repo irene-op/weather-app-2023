@@ -43,7 +43,7 @@ function getDate(response) {
 
 //forecast
 function displayForecast(response) {
-    console.log(response.data);
+    //console.log(response.data.daily);
     let forecast = document.querySelector("#forecast");
     let days = ['Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     let forecastHTML = `<div class="row d-flex justify-content-around">`;
@@ -145,4 +145,4 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelcius);
 
 
-//displayForecast();
+displayForecast();
