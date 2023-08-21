@@ -41,6 +41,16 @@ li {
     top: -14px;
 }
 
+.weather-forecast {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.forecast-icons {
+    display: block;
+    margin: 0 auto;
+}
+
 .current-temperature .active {
     color: black;
     cursor: default;

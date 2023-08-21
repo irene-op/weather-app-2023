@@ -45,6 +45,8 @@ function getWeather(response) {
     let windSpeed = document.querySelector("#wind-speed");
     let mainIcon = document.querySelector("#main-icon");
     
+    //call displayForecast() here
+
     celciusTemperature = Math.round(response.data.main.temp);
 
     mainIcon.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
@@ -73,6 +75,7 @@ function handleSubmit(event) {
     searchCity(inputCity.value);
 }
 let celciusTemperature = null; // set as global variable to use in various places.
+
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
@@ -108,3 +111,24 @@ fahrenheitLink.addEventListener("click", displayFahrenheit);
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelcius);
+
+//forecast
+function displayForecast() {
+    let forecast = document.querySelector("#forecast");
+    let days = ['Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    let forecastHTML = `<div class="row d-flex justify-content-around">`;
+
+    //this function will append a forecast col for each day in the array
+    days.forEach(function (day) {
+        forecastHTML = forecastHTML + `<div class="col-2"> 
+                        <div id="forecast-day">${day}</div>
+                        <img src="https://openweathermap.org/img/wn/04d@2x.png" alt="" width="40" class="forecast-icons">
+                        <div id="forecast-temperatures"><span id="temperature-min">10°</span><strong id="temperature-max">12°</strong></div>
+                    </div>`;
+    });
+    
+    forecastHTML = forecastHTML + `</div>`;
+    forecast.innerHTML = forecastHTML;
+}
+
+displayForecast();
