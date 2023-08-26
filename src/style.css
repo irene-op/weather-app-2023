@@ -73,10 +73,10 @@ li {
     margin-right: 15px;
 }
 
-#fahrenheit {
-    text-decoration: none;
+#temperature-min {
+    opacity: 0.7;
+    margin-right: 3px;
 }
-
 footer {
     text-align: center;
     font-size: smaller;

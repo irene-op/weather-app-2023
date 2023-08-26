@@ -128,32 +128,11 @@ axios.get(apiUrl).then(getWeather);
 axios.get(apiUrl).then(getDate);
 
 // Convert units
-function displayCelcius(event) {
-    event.preventDefault();
-    let temperature = document.querySelector("#current-temperature");
-    temperature.innerHTML = celciusTemperature;
-    celciusLink.classList.add("active");
-    fahrenheitLink.classList.remove("active");
-}
-
-function displayFahrenheit(event) {
-    event.preventDefault();
-    let temperature = document.querySelector("#current-temperature");
-    let fahrenheitTemperature = Math.round((celciusTemperature * 9/5) + 32);
-    temperature.innerHTML = fahrenheitTemperature;
-    celciusLink.classList.remove("active");
-    fahrenheitLink.classList.add("active");
-}
 
 let celciusTemperature = null; // set as global variable to use in various places.
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-let celciusLink = document.querySelector("#celcius-link");
-celciusLink.addEventListener("click", displayCelcius);
 
 //displayForecast();
