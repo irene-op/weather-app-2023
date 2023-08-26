@@ -12,9 +12,12 @@ li {
     list-style-type: none;
 }
 
+.container {
+    margin-bottom: ;
+}
 .weather-app {
     max-width: 600px;
-    margin: 40px auto;
+    margin: 40px auto 5px auto;
     padding: 20px 20px 0 20px;
     border: 1px solid #596BCA;
     border-radius: 10px;
@@ -74,3 +77,6 @@ li {
     text-decoration: none;
 }
 
+footer {
+    text-align: center;
+    font-size: smaller;
